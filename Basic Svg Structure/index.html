@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic SVG Structure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--========= Basic SVG Overview  =============-->
+    <svg width="200" height="200">
+      <circle
+        cx="100"
+        cy="100"
+        fill="transparent"
+        stroke="black"
+        r="60"
+        stroke-width="10"
+        class="myClass"
+      />
+    </svg>
+
+    <!--========= Basic SVG Overview  Rectangle(<rect>)  =============-->
+    <svg width="200" height="200">
+      <rect x="50" y="20" width="150" height="100" fill="blue" />
+    </svg>
+    <!--========= Basic SVG Overview  Line(<line>)  =============-->
+    <svg width="200" height="200">
+      <line x1="10" y1="10" x2="190" y2="190" stroke="black" stroke-width="2" />
+    </svg>
+    <!--========= Basic SVG Overview  Ellipse(<ellipse>)  =============-->
+    <svg width="200" height="200">
+      <ellipse cx="100" cy="80" rx="50" ry="30" fill="red" />
+    </svg>
+    <!--========= Basic SVG Overview  Polygon(<polygon>)  =============-->
+    <svg width="200" height="200">
+      <polygon points="50, 150 100, 50 150,150" fill="purple" />
+    </svg>
+    <!--========= Basic SVG Overview  Path(<path>)  =============-->
+    <svg width="200" height="200">
+      <path d="M10 100 Q 95 100 180 100" stroke="black" fill="transparent" />
+    </svg>
+
+    <svg width="400" height="200">
+      <line x1="10" y1="10" x2="190" y2="190" class="line" />
+      <line x1="290" y1="10" x2="190" y2="190" class="line1" />
+    </svg>
+  </body>
+</html>

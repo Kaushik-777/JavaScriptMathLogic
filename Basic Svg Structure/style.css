@@ -1,0 +1,33 @@
+svg .line {
+    animation: draw 1.5s forwards;
+    animation-duration: 5s;
+    stroke-width: 2;
+    stroke: red;
+}
+svg .line1 {
+    animation: draw1 1.5s forwards;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    stroke-width: 2;
+    stroke: red;
+}
+@keyframes draw {
+    0% {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+    }
+    100% {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes draw1 {
+    0% {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+    }
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark: #1c1c1c;
+    --light: #c4c4c4;
+    --teal: #008080;
+
+    --comfortaa: 'Comfortaa', cursive;
+    --redressed: 'Redressed', cursive;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+}
+p {
+    font-size: 2.4rem;
+    color: var(--light);
+    font-family: var(--comfortaa);
+}
+.typed-text {
+    color: var(--teal);
+    font-family: var(--redressed);
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    margin-left: 4px;
+    background-color: var(--teal);
+}
+.cursor.blink {
+    animation: blink 0.8s ease-in-out infinite;
+}
+@keyframes blink {
+    0%, 100% {
+        background-color: var(--teal);
+    }
+    40%, 50% {
+        background-color: transparent;
+    }
+}

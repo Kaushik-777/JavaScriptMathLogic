@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simple Interest Calculator</h2>
+        <form action="">
+           <div class="flex">
+            <label for="">Enter Amount: (₹)</label>
+            <input type="number" id="principal" required>
+           </div>
+           <div class="flex">
+            <label for="">Annual Interest Rate (%):</label>
+            <input type="number" id="rate" required>
+           </div>
+           <div class="flex">
+            <label for="">Number of Years:</label>
+            <input type="number" id="years" required>
+           </div>
+           <button type="button" onclick="calculateInterest()">Calculate</button>
+        </form>
+        <p id="interest"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

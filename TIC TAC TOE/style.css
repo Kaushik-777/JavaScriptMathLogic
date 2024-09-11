@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  background-color: #548687;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.container p {
+    color: #fff;
+    font-size: 8vmin;
+    margin-bottom: 10px;
+}
+.container .game {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.container .game .box {
+  width: 18vmin;
+  height: 18vmin;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  font-size: 8vmin;
+  text-align: center;
+  line-height: 18vmin;
+  color: #b0413e;
+  user-select: none;
+}
+.container button.btn {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2.5vmin;
+  letter-spacing: 0rem;
+  font-weight: 600;
+  background-color: #191913;
+  color: #fff;
+}
+.hide {
+    display: none;
+}

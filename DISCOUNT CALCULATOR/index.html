@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Discount Calculaton</h2>
+        <form action="">
+            <label for="">Enter Original Price: (₹)</label>
+            <input type="number" id="original" required>
+            <label for="">Enter Discount Rate: (%)</label>
+            <input type="number" id="discount" required>
+            <button type="button" onclick="discountRate()">Calculate</button>
+        </form>
+        <div id="result">
+            <p id="original-price"></p>
+            <p id="discount-amount"></p>
+            <p id="final-price"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
